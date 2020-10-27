@@ -1,8 +1,7 @@
 @import '../../../mixins/mixins.scss';
 
 .footer {
-	flex: 1;
-	@include widthHeight(100%, 2em);
+	@include widthHeight(100%, 8vh);
 	@include flexDirJusAli(row, center, center);
 	background: linear-gradient(
 		to right,
@@ -10,7 +9,6 @@
 		rgba(233, 83, 69, 0.5)
 	);
 	padding: 1em 0px;
-	overflow: visible;
 	.footer__container {
 		@include flexDirJusAli(row, center, center);
 		@include widthHeight(100%, 100%);

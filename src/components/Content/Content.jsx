@@ -29,7 +29,7 @@ function Content({
 				<div className='content__descriptionCard'>
 					{images.map((i) => (
 						<Card
-							key={i.id}
+							id={i.id}
 							image={i.img}
 							name={i.name}
 							description={i.description}

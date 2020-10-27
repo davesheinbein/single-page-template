@@ -58,8 +58,9 @@
 				list-style: none;
 				@include zeroMarginPadding;
 				display: flex;
+				@include flexDirJusAli(row, center, center);
 				li {
-					padding: 0 1.5rem;
+					padding: 0 0.5rem;
 					a {
 						color: #4bb392;
 						text-decoration: none;
@@ -74,6 +75,29 @@
 								rgba(75, 179, 146, 0.5);
 							outline-width: 0;
 							outline: none;
+						}
+						.header__option {
+							@include flexDirJusAli(
+								column,
+								initial,
+								initial
+							);
+							white-space: nowrap;
+							.header__optionLineOne {
+								text-decoration: none;
+								// might remove vvv
+								border-bottom: 1px solid #4bb392;
+							}
+							.header__optionLineTwo {
+								text-decoration: none;
+								// might remove vvv
+								border-bottom: 1px solid #4bb392;
+							}
+						}
+						.header__optionBasket {
+							border-bottom: 1px solid #4bb392;
+							.header__basketCount {
+							}
 						}
 					}
 				}

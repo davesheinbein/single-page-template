@@ -111,6 +111,50 @@
   outline: none;
 }
 
+.sidebar ul li a .sidebar__option {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  white-space: nowrap;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4bb392), to(#409479));
+  background: linear-gradient(to bottom, #4bb392, #409479);
+  background-clip: text;
+}
+
+.sidebar ul li a .sidebar__option .sidebar__optionLineOne {
+  text-decoration: none;
+  border-bottom: 1px solid #4bb392;
+}
+
+.sidebar ul li a .sidebar__option .sidebar__optionLineTwo {
+  text-decoration: none;
+  border-bottom: 1px solid #4bb392;
+}
+
+.sidebar ul li a .sidebar__optionBasket {
+  color: #4bb392;
+}
+
+.sidebar ul li a .sidebar__optionBasket .sidebar__basketCount {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4bb392), to(#409479));
+  background: linear-gradient(to bottom, #4bb392, #409479);
+  background-clip: text;
+}
+
 .open {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
