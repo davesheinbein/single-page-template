@@ -1,0 +1,78 @@
+.contact__form {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(223, 53, 73, 0.85)), to(rgba(233, 83, 69, 0.85)));
+  background: linear-gradient(to bottom, rgba(223, 53, 73, 0.85), rgba(233, 83, 69, 0.85));
+  padding: 1em;
+  border-radius: 25px;
+  width: 80vw;
+  height: 100%;
+  max-width: 1000px;
+}
+
+.contact__form .contactForm__inputSection {
+  margin: 0.5em 0px;
+}
+
+.contact__form .contactForm__inputSection .input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+}
+
+.contact__form .contactForm__inputSection .input-block label {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.contact__form .contactForm__inputSection .input-block .form-control {
+  outline: none;
+  width: 96%;
+  resize: none;
+  padding: 5px;
+  overflow-y: scroll;
+}
+
+.contact__form .contactForm__inputSection .input-block .textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.contact__form .contactForm__inputSection .contactForm__btn {
+  font-weight: 900;
+  width: 100%;
+  padding: 0.5em 1em;
+  border: 0px solid transparent;
+  border-radius: 25px;
+  color: white;
+  background: #df3549;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contact__form .contactForm__inputSection .contactForm__btn:hover {
+  opacity: 0.95;
+  background: #e95345;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=ContactForm.css.map */

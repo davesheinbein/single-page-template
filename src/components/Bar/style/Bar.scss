@@ -1,0 +1,266 @@
+@import '../../../mixins/mixins.scss';
+
+.bar {
+	@include widthHeight(100%, 100%);
+	min-height: 12vh;
+	@include flexDirJusAli(row, center, center);
+	background: linear-gradient(
+		to right,
+		rgba(223, 53, 73, 1),
+		rgba(233, 83, 69, 0.5)
+	);
+	@include noSelection;
+	& > .bar__logo {
+		@include flexDirJusAli(row, center, center);
+		margin-left: 0.5em;
+		margin-right: auto;
+		& > .bar__logoImg {
+			@include widthHeight(6vw, 100%);
+			margin-right: 0.5em;
+		}
+		& > .bar__logoTextContainer {
+			margin-right: auto;
+			margin-right: 0.5em;
+			white-space: nowrap;
+			& > .bar__logoText {
+				font-size: 36px;
+				font-weight: 900;
+				color: transparent;
+				background: linear-gradient(
+					to bottom,
+					rgb(75, 179, 146),
+					rgb(64, 148, 121)
+				);
+				background-clip: text;
+			}
+			& > .bar__logoSubText {
+				font-size: 24px;
+				font-weight: 600;
+				color: transparent;
+				background: linear-gradient(
+					to bottom,
+					rgb(27, 29, 28),
+					rgb(10, 59, 44)
+				);
+				background-clip: text;
+			}
+		}
+	}
+	.bar__description {
+		width: fit-content;
+		margin-right: auto;
+		margin-left: 0.5em;
+		& > .bar__descriptionText {
+			font-size: 14px;
+			font-weight: 500;
+		}
+	}
+}
+
+// #bar {
+// @include widthHeight(100%, 8vh);
+// @include flexDirJusAli(row, center, center);
+// background: linear-gradient(
+// 	to right,
+// 	rgba(223, 53, 73, 1),
+// 	rgba(233, 83, 69, 0.5)
+// );
+// & > .bar__logo {
+// 	@include flexDirJusAli(row, center, center);
+// 	margin-left: 0.5em;
+// 	margin-right: auto;
+// 	& > .bar__logoImg {
+// 		@include widthHeight(6vw, 100%);
+// 		margin-right: 0.5em;
+// 	}
+// 	& > .bar__logoTextContainer {
+// 		margin-right: 0.5em;
+// 		& > .bar__logoText {
+// 			font-size: 36px;
+// 			font-weight: 900;
+// 			color: transparent;
+// 			background: linear-gradient(
+// 				to bottom,
+// 				rgb(75, 179, 146),
+// 				rgb(64, 148, 121)
+// 			);
+// 			background-clip: text;
+// 		}
+// 		& > .bar__logoSubText {
+// 			font-size: 24px;
+// 			font-weight: 600;
+// 			color: transparent;
+// 			background: linear-gradient(
+// 				to bottom,
+// 				rgb(27, 29, 28),
+// 				rgb(10, 59, 44)
+// 			);
+// 			background-clip: text;
+// 		}
+// 	}
+// }
+// .bar__description {
+// 	width: fit-content;
+// 	margin-right: auto;
+// 	& > .bar__descriptionText {
+// 		font-size: 14px;
+// 		font-weight: 500;
+// 	}
+// }
+// }
+
+// #barB {
+// @include widthHeight(100%, 8vh);
+// @include flexDirJusAli(row, center, center);
+// background: linear-gradient(
+// 	to right,
+// 	rgba(223, 53, 73, 1),
+// 	rgba(233, 83, 69, 0.5)
+// );
+// & > .bar__logo {
+// 	@include flexDirJusAli(row, center, center);
+// 	margin-left: 0.5em;
+// 	margin-right: auto;
+// 	& > .bar__logoImg {
+// 		@include widthHeight(6vw, 100%);
+// 		margin-right: 0.5em;
+// 	}
+// 	& > .bar__logoTextContainer {
+// 		margin-right: 0.5em;
+// 		& > .bar__logoText {
+// 			font-size: 36px;
+// 			font-weight: 900;
+// 			color: transparent;
+// 			background: linear-gradient(
+// 				to bottom,
+// 				rgb(75, 179, 146),
+// 				rgb(64, 148, 121)
+// 			);
+// 			background-clip: text;
+// 		}
+// 		& > .bar__logoSubText {
+// 			font-size: 24px;
+// 			font-weight: 600;
+// 			color: transparent;
+// 			background: linear-gradient(
+// 				to bottom,
+// 				rgb(27, 29, 28),
+// 				rgb(10, 59, 44)
+// 			);
+// 			background-clip: text;
+// 		}
+// 	}
+// }
+// .bar__description {
+// 	width: fit-content;
+// 	margin-right: auto;
+// 	& > .bar__descriptionText {
+// 		font-size: 14px;
+// 		font-weight: 500;
+// 	}
+// }
+// }
+
+// #barC {
+// @include widthHeight(100%, 8vh);
+// @include flexDirJusAli(row, center, center);
+// background: linear-gradient(
+// 	to right,
+// 	rgba(223, 53, 73, 1),
+// 	rgba(233, 83, 69, 0.5)
+// );
+// & > .bar__logo {
+// 	@include flexDirJusAli(row, center, center);
+// 	margin-left: 0.5em;
+// 	margin-right: auto;
+// 	& > .bar__logoImg {
+// 		@include widthHeight(6vw, 100%);
+// 		margin-right: 0.5em;
+// 	}
+// 	& > .bar__logoTextContainer {
+// 		margin-right: 0.5em;
+// 		& > .bar__logoText {
+// 			font-size: 36px;
+// 			font-weight: 900;
+// 			color: transparent;
+// 			background: linear-gradient(
+// 				to bottom,
+// 				rgb(75, 179, 146),
+// 				rgb(64, 148, 121)
+// 			);
+// 			background-clip: text;
+// 		}
+// 		& > .bar__logoSubText {
+// 			font-size: 24px;
+// 			font-weight: 600;
+// 			color: transparent;
+// 			background: linear-gradient(
+// 				to bottom,
+// 				rgb(27, 29, 28),
+// 				rgb(10, 59, 44)
+// 			);
+// 			background-clip: text;
+// 		}
+// 	}
+// }
+// .bar__description {
+// 	width: fit-content;
+// 	margin-right: auto;
+// 	& > .bar__descriptionText {
+// 		font-size: 14px;
+// 		font-weight: 500;
+// 	}
+// }
+// }
+
+// #barD {
+// @include widthHeight(100%, 8vh);
+// @include flexDirJusAli(row, center, center);
+// background: linear-gradient(
+// 	to right,
+// 	rgba(223, 53, 73, 1),
+// 	rgba(233, 83, 69, 0.5)
+// );
+// & > .bar__logo {
+// 	@include flexDirJusAli(row, center, center);
+// 	margin-left: 0.5em;
+// 	margin-right: auto;
+// 	& > .bar__logoImg {
+// 		@include widthHeight(6vw, 100%);
+// 		margin-right: 0.5em;
+// 	}
+// 	& > .bar__logoTextContainer {
+// 		margin-right: 0.5em;
+// 		& > .bar__logoText {
+// 			font-size: 36px;
+// 			font-weight: 900;
+// 			color: transparent;
+// 			background: linear-gradient(
+// 				to bottom,
+// 				rgb(75, 179, 146),
+// 				rgb(64, 148, 121)
+// 			);
+// 			background-clip: text;
+// 		}
+// 		& > .bar__logoSubText {
+// 			font-size: 24px;
+// 			font-weight: 600;
+// 			color: transparent;
+// 			background: linear-gradient(
+// 				to bottom,
+// 				rgb(27, 29, 28),
+// 				rgb(10, 59, 44)
+// 			);
+// 			background-clip: text;
+// 		}
+// 	}
+// }
+// .bar__description {
+// 	width: fit-content;
+// 	margin-right: auto;
+// 	& > .bar__descriptionText {
+// 		font-size: 14px;
+// 		font-weight: 500;
+// 	}
+// }
+// }

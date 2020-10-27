@@ -1,0 +1,58 @@
+@import '../../../mixins/mixins.scss';
+
+.footer {
+	flex: 1;
+	@include widthHeight(100%, 2em);
+	@include flexDirJusAli(row, center, center);
+	background: linear-gradient(
+		to right,
+		rgba(223, 53, 73, 1),
+		rgba(233, 83, 69, 0.5)
+	);
+	padding: 1em 0px;
+	overflow: visible;
+	.footer__container {
+		@include flexDirJusAli(row, center, center);
+		@include widthHeight(100%, 100%);
+		max-width: 1000px;
+		padding: 0 2rem;
+		.footer__logo {
+			@include flexDirJusAli(row, center, center);
+			.footer__imgContainer {
+				@include widthHeight(100%, 100%);
+				margin-right: 0.5em;
+				position: relative;
+				img {
+					@include widthHeight(3.5em, 3.5em);
+				}
+			}
+			.footer__logoText {
+				font-family: 'Bebas Neue', cursive;
+				font-size: 22.84px;
+				line-height: 25.84px;
+				color: transparent;
+				background: linear-gradient(
+					to bottom,
+					rgb(75, 179, 146),
+					rgb(64, 148, 121)
+				);
+				background-clip: text;
+				font-size: 36px;
+				font-weight: 900;
+			}
+		}
+		.footer__copyright {
+			margin-left: auto;
+			.footer__copyrightText {
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.footer__copyright {
+		padding-left: 1em;
+		font-size: 92%;
+	}
+} ;

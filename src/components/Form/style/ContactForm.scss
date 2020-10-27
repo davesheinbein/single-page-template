@@ -1,0 +1,52 @@
+@import '../../../mixins/mixins.scss';
+
+.contact__form {
+	background: linear-gradient(
+		to bottom,
+		rgba(223, 53, 73, 0.85),
+		rgba(233, 83, 69, 0.85)
+	);
+	padding: 1em;
+	border-radius: 25px;
+	@include widthHeight(80vw, 100%);
+	max-width: 1000px;
+	.contactForm__inputSection {
+		margin: 0.5em 0px;
+		.input-block {
+			@include flexDirJusAli(column, initial, initial);
+			label {
+				font-size: 1.5rem;
+				font-weight: 900;
+				color: rgba(255, 255, 255, 0.9);
+				@include noSelection;
+			}
+			.form-control {
+				outline: none;
+				width: 96%;
+				resize: none;
+				padding: 5px;
+				overflow-y: scroll;
+			}
+			.textarea {
+				&::-webkit-scrollbar {
+					display: none;
+				}
+			}
+		}
+		.contactForm__btn {
+			font-weight: 900;
+			width: 100%;
+			padding: 0.5em 1em;
+			border: 0px solid transparent;
+			border-radius: 25px;
+			color: rgb(255, 255, 255);
+			background: rgba(223, 53, 73, 1);
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+			&:hover {
+				opacity: 0.95;
+				background: rgba(233, 83, 69, 1);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+			}
+		}
+	}
+}

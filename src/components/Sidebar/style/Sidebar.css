@@ -2,8 +2,8 @@
   width: 70%;
   height: 100%;
   max-width: 400px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6ba2d3), to(rgba(60, 73, 97, 0.85)));
-  background: linear-gradient(to bottom, #6ba2d3, rgba(60, 73, 97, 0.85));
+  background: -webkit-gradient(linear, left top, left bottom, from(#df3549), to(rgba(233, 83, 69, 0.5)));
+  background: linear-gradient(to bottom, #df3549, rgba(233, 83, 69, 0.5));
   -webkit-box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
           box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -16,7 +16,57 @@
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar .sidebar__logo {
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+.sidebar .sidebar__logo a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4bb392), to(#409479));
+  background: linear-gradient(to bottom, #4bb392, #409479);
+  background-clip: text;
+}
+
+.sidebar .sidebar__logo a:hover, .sidebar .sidebar__logo a:active {
+  color: rgba(0, 0, 0, 0.5);
+  outline-width: 0;
+  outline: none;
+}
+
+.sidebar .sidebar__logo a img {
+  margin-right: 0.5em;
+  width: 4em;
+  height: 4em;
+}
+
+.sidebar .sidebar__logo a .sidebar__logoText {
+  font-size: 36px;
+  font-weight: 900;
+  border-bottom: 1px solid rgba(75, 179, 146, 0.5);
+}
+
+.sidebar .sidebar__logo a .sidebar__logoText:hover, .sidebar .sidebar__logo a .sidebar__logoText:active {
+  color: rgba(0, 0, 0, 0.5);
+  outline-width: 0;
+  outline: none;
 }
 
 .sidebar ul {
@@ -43,12 +93,15 @@
 }
 
 .sidebar ul li a {
-  color: #fefeff;
   text-decoration: none;
-  border-bottom: 1px solid #fefeff;
   font-size: 1rem;
   font-weight: 900;
   font-style: italic;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4bb392), to(#409479));
+  background: linear-gradient(to bottom, #4bb392, #409479);
+  background-clip: text;
+  border-bottom: 2px solid rgba(75, 179, 146, 0.5);
 }
 
 .sidebar ul li a:hover, .sidebar ul li a:active {
@@ -61,5 +114,12 @@
 .open {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+@media (max-width: 426px) {
+  .sidebar {
+    width: 90%;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=Sidebar.css.map */

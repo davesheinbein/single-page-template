@@ -1,0 +1,93 @@
+.bar {
+  width: 100%;
+  height: 100%;
+  min-height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#df3549), to(rgba(233, 83, 69, 0.5)));
+  background: linear-gradient(to right, #df3549, rgba(233, 83, 69, 0.5));
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.bar > .bar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.5em;
+  margin-right: auto;
+}
+
+.bar > .bar__logo > .bar__logoImg {
+  width: 6vw;
+  height: 100%;
+  margin-right: 0.5em;
+}
+
+.bar > .bar__logo > .bar__logoTextContainer {
+  margin-right: auto;
+  margin-right: 0.5em;
+  white-space: nowrap;
+}
+
+.bar > .bar__logo > .bar__logoTextContainer > .bar__logoText {
+  font-size: 36px;
+  font-weight: 900;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4bb392), to(#409479));
+  background: linear-gradient(to bottom, #4bb392, #409479);
+  background-clip: text;
+}
+
+.bar > .bar__logo > .bar__logoTextContainer > .bar__logoSubText {
+  font-size: 24px;
+  font-weight: 600;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1b1d1c), to(#0a3b2c));
+  background: linear-gradient(to bottom, #1b1d1c, #0a3b2c);
+  background-clip: text;
+}
+
+.bar .bar__description {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: 0.5em;
+}
+
+.bar .bar__description > .bar__descriptionText {
+  font-size: 14px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=Bar.css.map */

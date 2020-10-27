@@ -1,0 +1,54 @@
+@import '../../../mixins/mixins.scss';
+
+.CarouselSection {
+	@include widthHeight(100vw, fit-content);
+	@include flexDirJusAli(column, center, center);
+	background: linear-gradient(
+		to bottom,
+		rgb(75, 179, 146),
+		rgb(64, 148, 121)
+	);
+	.rec-carousel-wrapper {
+		@include widthHeight(100%, 100%);
+		max-width: 1000px;
+		padding: 2em 0 1em;
+		.rec-carousel {
+			.rec-slider-container {
+				margin: 0 3em;
+				.rec-slider {
+					.rec-swipable {
+						.rec-carousel-item {
+							.rec-item-wrapper {
+								transition: all 0.5s ease-in-out;
+								box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+								&:hover {
+									transform: scale(1.1);
+									box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+								}
+								img {
+									outline-width: 0;
+									outline: none;
+									width: 95%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.rec-pagination {
+			transform: scale(0.75);
+			.rec-dot {
+				background: rgb(43, 102, 83);
+				border-color: rgb(0, 0, 0);
+				box-shadow: 0 0 1px 1px rgb(43, 102, 83);
+			}
+			.rec-dot_active {
+				background: #ffffff;
+				border-color: #ffffff;
+				outline-color: #ffffff;
+				box-shadow: 0 0 1px 1px #ffffff;
+			}
+		}
+	}
+}

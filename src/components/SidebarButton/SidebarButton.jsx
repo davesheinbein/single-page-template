@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './style/SidebarButton.css';
 
-import './style/SidebarButton.css'
+const SidebarButton = (props) => (
+	<button
+		className='sidebarButton'
+		onClick={props.sidebarClickHandler}>
+		<div className='sidebarButton__line' />
+		<div className='sidebarButton__line' />
+		<div className='sidebarButton__line' />
+	</button>
+);
 
-const SidebarButton = props => (
-<button className="sidebarButton" onClick={props.sidebarClickHandler}>
-    <div className="sidebarButton__line" />
-    <div className="sidebarButton__line" />
-    <div className="sidebarButton__line" />
-</button>
-)
-
-export default SidebarButton
+export default SidebarButton;

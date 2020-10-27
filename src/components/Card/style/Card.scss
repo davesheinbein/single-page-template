@@ -1,0 +1,30 @@
+@import '../../../mixins/mixins.scss';
+
+.card {
+	@include widthHeight(100%, 100%);
+	max-width: 160px;
+	min-width: 80px;
+	@include flexDirJusAli(column, center, center);
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	background: linear-gradient(
+		to bottom,
+		rgba(75, 179, 146, 1),
+		rgba(64, 148, 121, 0.85)
+	);
+	padding: 1em;
+	& > img {
+		@include widthHeight(150px, 150px);
+		margin-bottom: 1em;
+	}
+	& > .card__name {
+		width: 100%;
+		font-size: 24px;
+		font-weight: 900;
+	}
+	& > .card__description {
+		width: 100%;
+		font-size: 14px;
+		font-weight: 400;
+	}
+}

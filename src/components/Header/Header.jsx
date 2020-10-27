@@ -10,17 +10,24 @@ const Header = (props) => (
 	<header className='header'>
 		<nav className='header__navigation'>
 			<div className='header__logo'>
-				<a href='https://github.com/davesheinbein/mountain-template'>
+				<a href='https://github.com/davesheinbein/healthy-template'>
 					<img src={logo} alt='logo' />
+					<div className='header__logoText'>FRUSHLEY</div>
 				</a>
 			</div>
 			<div className='header__navigationItems'>
 				<ul>
 					<li>
-						<a href='#history'>01. HISTORY</a>
+						<a href='#about'>ABOUT</a>
 					</li>
 					<li>
-						<a href='#team'>02. TEAM</a>
+						<a href='#product'>PRODUCT</a>
+					</li>
+					<li>
+						<a href='#team'>TEAM</a>
+					</li>
+					<li>
+						<a href='#contact'>CONTACT</a>
 					</li>
 				</ul>
 			</div>

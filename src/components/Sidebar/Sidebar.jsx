@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../../images/flowerLogo.png';
 import './style/Sidebar.css';
 
 const Sidebar = (props) => {
@@ -8,12 +9,24 @@ const Sidebar = (props) => {
 	}
 	return (
 		<nav className={sidebarClasses}>
+			<div className='sidebar__logo'>
+				<a href='https://github.com/davesheinbein/healthy-template'>
+					<img src={logo} alt='logo' />
+					<div className='sidebar__logoText'>FRUSHLEY</div>
+				</a>
+			</div>
 			<ul>
 				<li>
-					<a href='#history'>01. HISTORY</a>
+					<a href='#about'>ABOUT</a>
 				</li>
 				<li>
-					<a href='#team'>02. TEAM</a>
+					<a href='#product'>PRODUCT</a>
+				</li>
+				<li>
+					<a href='#team'>TEAM</a>
+				</li>
+				<li>
+					<a href='#contact'>CONTACT</a>
 				</li>
 			</ul>
 		</nav>

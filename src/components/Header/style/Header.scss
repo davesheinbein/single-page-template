@@ -2,9 +2,9 @@
 
 .header {
 	background-color: transparent;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	@include topLeftAbsolute(0, 0);
-	@include widthHeight(100%, 4em);
+	@include widthHeight(100%, 5em);
 	@include flexDirJusAli(row, center, center);
 	.header__navigation {
 		display: flex;
@@ -20,8 +20,35 @@
 			margin-left: 0.5rem;
 			a {
 				text-decoration: none;
+				@include flexDirJusAli(row, center, center);
+				color: transparent;
+				background: linear-gradient(
+					to bottom,
+					rgb(75, 179, 146),
+					rgb(64, 148, 121)
+				);
+				background-clip: text;
+				&:hover,
+				&:active {
+					color: rgba(0, 0, 0, 0.5);
+					outline-width: 0;
+					outline: none;
+				}
 				img {
 					margin-right: 0.5em;
+					@include widthHeight(4em, 4em);
+				}
+				.header__logoText {
+					font-size: 36px;
+					font-weight: 900;
+					border-bottom: 1px solid rgba(75, 179, 146, 0.5);
+					&:hover,
+					&:active {
+						color: rgba(0, 0, 0, 0.5);
+						border-bottom: 1px solid rgba(75, 179, 146, 0.5);
+						outline-width: 0;
+						outline: none;
+					}
 				}
 			}
 		}
@@ -34,16 +61,17 @@
 				li {
 					padding: 0 1.5rem;
 					a {
-						color: #fefeff;
+						color: #4bb392;
 						text-decoration: none;
-						border-bottom: 1px solid #fefeff;
+						border-bottom: 1px solid #4bb392;
 						font-size: 12px;
 						font-weight: 900;
 						font-style: italic;
 						&:hover,
 						&:active {
 							color: rgba(0, 0, 0, 0.5);
-							border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+							border-bottom: 1px solid
+								rgba(75, 179, 146, 0.5);
 							outline-width: 0;
 							outline: none;
 						}
