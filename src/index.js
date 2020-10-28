@@ -6,22 +6,14 @@ import {
 	BrowserRouter as Router,
 	Route,
 } from 'react-router-dom';
-import { StateProvider } from './components/StateProvider/StateProvider';
-import reducer, { initialState } from './reducer';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
 	<Router>
 		<React.StrictMode>
-			<StateProvider
-				initialState={initialState}
-				reducer={reducer}>
-				<Route
-					render={({ history }) => (
-						<App history={history} />
-					)}
-				/>
-			</StateProvider>
+			<Route
+				render={({ history }) => <App history={history} />}
+			/>
 		</React.StrictMode>
 	</Router>,
 	document.getElementById('root')
