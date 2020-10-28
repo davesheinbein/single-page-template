@@ -61,13 +61,16 @@
       -ms-flex-align: center;
           align-items: center;
   color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4bb392), to(#409479));
-  background: linear-gradient(to bottom, #4bb392, #409479);
+  background: -webkit-gradient(linear, left top, left bottom, from(#df3549), to(rgba(233, 83, 69, 0.75)));
+  background: linear-gradient(to bottom, #df3549, rgba(233, 83, 69, 0.75));
   background-clip: text;
 }
 
 .header .header__navigation .header__logo a:hover, .header .header__navigation .header__logo a:active {
-  color: rgba(0, 0, 0, 0.5);
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(223, 53, 73, 0.5)), to(rgba(233, 83, 69, 0.25)));
+  background: linear-gradient(to bottom, rgba(223, 53, 73, 0.5), rgba(233, 83, 69, 0.25));
+  background-clip: text;
   outline-width: 0;
   outline: none;
 }
@@ -81,12 +84,11 @@
 .header .header__navigation .header__logo a .header__logoText {
   font-size: 36px;
   font-weight: 900;
-  border-bottom: 1px solid rgba(75, 179, 146, 0.5);
+  border-bottom: 1px solid #df3549;
 }
 
 .header .header__navigation .header__logo a .header__logoText:hover, .header .header__navigation .header__logo a .header__logoText:active {
-  color: rgba(0, 0, 0, 0.5);
-  border-bottom: 1px solid rgba(75, 179, 146, 0.5);
+  border-bottom: 1px solid rgba(223, 53, 73, 0.5);
   outline-width: 0;
   outline: none;
 }
@@ -116,21 +118,26 @@
 }
 
 .header .header__navigation .header__navigationItems ul li {
-  padding: 0 0.5rem;
+  padding: 0 1rem;
 }
 
 .header .header__navigation .header__navigationItems ul li a {
-  color: #4bb392;
   text-decoration: none;
-  border-bottom: 1px solid #4bb392;
   font-size: 12px;
   font-weight: 900;
-  font-style: italic;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#df3549), to(rgba(233, 83, 69, 0.75)));
+  background: linear-gradient(to bottom, #df3549, rgba(233, 83, 69, 0.75));
+  background-clip: text;
+  border-bottom: 1px solid #df3549;
 }
 
 .header .header__navigation .header__navigationItems ul li a:hover, .header .header__navigation .header__navigationItems ul li a:active {
-  color: rgba(0, 0, 0, 0.5);
-  border-bottom: 1px solid rgba(75, 179, 146, 0.5);
+  color: transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(223, 53, 73, 0.5)), to(rgba(233, 83, 69, 0.25)));
+  background: linear-gradient(to bottom, rgba(223, 53, 73, 0.5), rgba(233, 83, 69, 0.25));
+  background-clip: text;
+  border-bottom: 1px solid #df3549;
   outline-width: 0;
   outline: none;
 }

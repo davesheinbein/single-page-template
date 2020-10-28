@@ -1,20 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { useStateValue } from '../StateProvider/StateProvider';
-import { auth } from '../../firebase';
 // icons
-import { ShoppingBasket } from '@material-ui/icons';
-import logo from '../../images/flowerLogo.png';
+import logo from '../../images/logo.svg';
 import './style/Sidebar.css';
 
 const Sidebar = (props) => {
-	const [{ basket, user }] = useStateValue();
-
-	const handleAuthentication = () => {
-		if (user) {
-			auth.signOut();
-		}
-	};
 	let sidebarClasses = ['sidebar'];
 	if (props.show) {
 		sidebarClasses = ['sidebar open'];
@@ -24,7 +13,7 @@ const Sidebar = (props) => {
 			<div className='sidebar__logo'>
 				<a href='https://github.com/davesheinbein/healthy-template'>
 					<img src={logo} alt='logo' />
-					<div className='sidebar__logoText'>FRUSHLEY</div>
+					<div className='sidebar__logoText'>TechCom</div>
 				</a>
 			</div>
 			<ul>
@@ -39,46 +28,6 @@ const Sidebar = (props) => {
 				</li>
 				<li>
 					<a href='#contact'>CONTACT</a>
-				</li>
-				<li>
-					<Link
-						to={!user && '/login'}
-						style={{ textDecoration: 'none' }}>
-						<div
-							className='sidebar__option'
-							onClick={handleAuthentication}>
-							<span className='sidebar__optionLineOne'>
-								Hello {!user ? 'Guest,' : user.email}
-							</span>
-							<span className='sidebar__optionLineTwo'>
-								{user ? 'Sign Out' : 'Sign In'}
-							</span>
-						</div>
-					</Link>
-				</li>
-				<li>
-					<Link
-						to='/orders'
-						style={{ textDecoration: 'none' }}>
-						<div className='sidebar__option'>
-							<span className='sidebar__optionLineOne'>
-								Returns
-							</span>
-							<span className='sidebar__optionLineTwo'>
-								Orders
-							</span>
-						</div>
-					</Link>
-				</li>
-				<li>
-					<Link to='/checkout'>
-						<div className='sidebar__optionBasket'>
-							<ShoppingBasket />
-							<span className='sidebar__optionLineTwo sidebar__basketCount'>
-								{basket?.length}
-							</span>
-						</div>
-					</Link>
 				</li>
 			</ul>
 		</nav>

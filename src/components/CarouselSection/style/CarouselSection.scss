@@ -5,8 +5,8 @@
 	@include flexDirJusAli(column, center, center);
 	background: linear-gradient(
 		to bottom,
-		rgb(75, 179, 146),
-		rgb(64, 148, 121)
+		rgb(230, 230, 230),
+		rgb(200, 200, 200)
 	);
 	.rec-carousel-wrapper {
 		@include widthHeight(100%, 100%);
@@ -34,36 +34,6 @@
 										transform: scale(1);
 									}
 								}
-								.CarouselSection__price {
-									font-size: 24px;
-									font-weight: 400;
-								}
-								button {
-									@include widthHeight(fit-content, 100%);
-									font-size: 14px;
-									font-weight: 900;
-									background: linear-gradient(
-										to bottom,
-										rgba(255, 255, 255, 0.75),
-										rgba(200, 200, 200, 0.75)
-									);
-									padding: 0.5em 1em;
-									margin: 1em;
-									border-radius: 25px;
-									border: 0px solid transparent;
-									box-shadow: 0px 1px 3px rgb(0, 0, 0);
-									outline: none;
-									outline-width: 0;
-									&:hover,
-									&:active {
-										background: linear-gradient(
-											to top,
-											rgba(255, 255, 255, 0.5),
-											rgba(200, 200, 200, 0.5)
-										);
-										box-shadow: 0px 3px 3px rgb(0, 0, 0);
-									}
-								}
 							}
 						}
 					}
@@ -73,9 +43,9 @@
 		.rec-pagination {
 			transform: scale(0.75);
 			.rec-dot {
-				background: rgb(43, 102, 83);
+				background: rgb(124, 124, 124);
 				border-color: rgb(0, 0, 0);
-				box-shadow: 0 0 1px 1px rgb(43, 102, 83);
+				box-shadow: 0 0 1px 1px rgb(0, 0, 0);
 			}
 			.rec-dot_active {
 				background: #ffffff;

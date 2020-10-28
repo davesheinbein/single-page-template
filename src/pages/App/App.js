@@ -6,9 +6,6 @@ import Section from '../../components/Section/Section';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import SidebarBackdrop from '../../components/SidebarBackdrop/SidebarBackdrop';
 import Content from '../../components/Content/Content';
-import Checkout from '../../components/Checkout/Checkout';
-import Orders from '../../components/Orders/Orders';
-import Payment from '../../components/Payment/Payment';
 import Bar from '../../components/Bar/Bar';
 import Footer from '../../components/Footer/Footer';
 // All static props info
@@ -16,31 +13,9 @@ import Constants from '../../components/Constants/Constants';
 
 // Routing
 import { Switch, Route } from 'react-router-dom';
-// User Auth
-import { auth } from '../../firebase';
-// Redux
-// import { useStateValue } from '../../components/StateProvider/StateProvider';
-// Stripe
-import { loadStripe } from '@stripe/stripe-js';
-import { Elements } from '@stripe/react-stripe-js';
+
 // Style
-
 import './stlye/App.css';
-import Login from '../../components/Login/Login';
-
-// Need Work... Help
-// Stripe Publishable key https://dashboard.stripe.com/test/apikeys
-// promise that compiles and load stripe based on Key
-const promise = loadStripe(
-	'pk_test_51HXuryAGYh1gFsygAcbMQ6nNumpmFOFhQIUvLsoqKk1Z30xYMV6DAiPtjekVGt8fOo92Iu8oP4E2fNRP21hfi0rm00KGWwWewI'
-);
-
-// Need Work... Help
-// function mapDispatchToProps(dispatch) {
-// 	return {
-// 		SET_USER: (user) => dispatch(user(SET_USER)),
-// 	};
-// }
 
 class App extends Component {
 	/*--- State ---*/
@@ -161,48 +136,6 @@ class App extends Component {
 								className={Constants[4].className}
 							/>
 						</Section>
-					</Route>
-					<Route exact path='/login'>
-						<Section>
-							<Header
-								display='none'
-								sidebarClickHandler={
-									this.sidebarClickHandler
-								}
-							/>
-							<Login />
-						</Section>
-					</Route>
-					<Route exact path='/orders'>
-						<Section>
-							<Header
-								display='none'
-								sidebarClickHandler={
-									this.sidebarClickHandler
-								}
-							/>
-							<Orders />
-						</Section>
-					</Route>
-					<Route exact path='/checkout'>
-						<Section>
-							<Header
-								display='none'
-								sidebarClickHandler={
-									this.sidebarClickHandler
-								}
-							/>
-							<Checkout />
-						</Section>
-					</Route>
-					<Route exact path='/payment'>
-						{/* Payment component is nested within the Elements */}
-						{/* imported from @stripe/react-stripe-js */}
-						{/* promise is defined above with */}
-						{/* loadStripe imported from @stripe/stripe-js*/}
-						<Elements stripe={promise}>
-							<Payment />
-						</Elements>
 					</Route>
 				</Switch>
 				<Footer />

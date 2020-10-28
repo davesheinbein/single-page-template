@@ -17,16 +17,22 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-family: 'Staatliches', cursive;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4bb392), to(rgba(64, 148, 121, 0.85)));
-  background: linear-gradient(to bottom, #4bb392, rgba(64, 148, 121, 0.85));
+  font-family: 'Fira Sans Condensed', sans-serif;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dddddd), to(rgba(238, 238, 238, 0.85)));
+  background: linear-gradient(to top, #dddddd, rgba(238, 238, 238, 0.85));
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
   padding: 1em;
+  border-radius: 10px;
 }
 
 .card > img {
   width: 150px;
   height: 150px;
   margin-bottom: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .card > .card__name {
@@ -36,6 +42,7 @@
 }
 
 .card > .card__description {
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
   font-size: 14px;
   font-weight: 400;

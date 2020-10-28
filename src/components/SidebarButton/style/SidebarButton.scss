@@ -19,5 +19,9 @@
 
 .sidebarButton__line {
 	@include widthHeight(30px, 2px);
-	background: #4bb392;
+	background: linear-gradient(
+		to bottom,
+		rgba(223, 53, 73, 1),
+		rgba(233, 83, 69, 0.75)
+	);
 }

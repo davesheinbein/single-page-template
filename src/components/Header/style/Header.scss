@@ -24,13 +24,19 @@
 				color: transparent;
 				background: linear-gradient(
 					to bottom,
-					rgb(75, 179, 146),
-					rgb(64, 148, 121)
+					rgba(223, 53, 73, 1),
+					rgba(233, 83, 69, 0.75)
 				);
 				background-clip: text;
 				&:hover,
 				&:active {
-					color: rgba(0, 0, 0, 0.5);
+					color: transparent;
+					background: linear-gradient(
+						to bottom,
+						rgba(223, 53, 73, 0.5),
+						rgba(233, 83, 69, 0.25)
+					);
+					background-clip: text;
 					outline-width: 0;
 					outline: none;
 				}
@@ -41,11 +47,10 @@
 				.header__logoText {
 					font-size: 36px;
 					font-weight: 900;
-					border-bottom: 1px solid rgba(75, 179, 146, 0.5);
+					border-bottom: 1px solid rgba(223, 53, 73, 1);
 					&:hover,
 					&:active {
-						color: rgba(0, 0, 0, 0.5);
-						border-bottom: 1px solid rgba(75, 179, 146, 0.5);
+						border-bottom: 1px solid rgba(223, 53, 73, 0.5);
 						outline-width: 0;
 						outline: none;
 					}
@@ -60,19 +65,29 @@
 				display: flex;
 				@include flexDirJusAli(row, center, center);
 				li {
-					padding: 0 0.5rem;
+					padding: 0 1rem;
 					a {
-						color: #4bb392;
 						text-decoration: none;
-						border-bottom: 1px solid #4bb392;
 						font-size: 12px;
 						font-weight: 900;
-						font-style: italic;
+						color: transparent;
+						background: linear-gradient(
+							to bottom,
+							rgba(223, 53, 73, 1),
+							rgba(233, 83, 69, 0.75)
+						);
+						background-clip: text;
+						border-bottom: 1px solid rgba(223, 53, 73, 1);
 						&:hover,
 						&:active {
-							color: rgba(0, 0, 0, 0.5);
-							border-bottom: 1px solid
-								rgba(75, 179, 146, 0.5);
+							color: transparent;
+							background: linear-gradient(
+								to bottom,
+								rgba(223, 53, 73, 0.5),
+								rgba(233, 83, 69, 0.25)
+							);
+							background-clip: text;
+							border-bottom: 1px solid rgba(223, 53, 73, 1);
 							outline-width: 0;
 							outline: none;
 						}

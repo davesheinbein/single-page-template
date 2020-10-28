@@ -4,9 +4,9 @@
 	@include widthHeight(100%, 8vh);
 	@include flexDirJusAli(row, center, center);
 	background: linear-gradient(
-		to right,
-		rgba(223, 53, 73, 1),
-		rgba(233, 83, 69, 0.5)
+		to top,
+		rgb(221, 221, 221),
+		rgba(238, 238, 238, 0.85)
 	);
 	padding: 1em 0px;
 	.footer__container {
@@ -25,15 +25,14 @@
 				}
 			}
 			.footer__logoText {
-				font-family: 'Bebas Neue', cursive;
-				font-size: 22.84px;
-				line-height: 25.84px;
-				color: transparent;
+				font-size: 23px;
+				line-height: 26px;
 				background: linear-gradient(
 					to bottom,
-					rgb(75, 179, 146),
-					rgb(64, 148, 121)
+					rgba(223, 53, 73, 1),
+					rgba(233, 83, 69, 0.75)
 				);
+				color: transparent;
 				background-clip: text;
 				font-size: 36px;
 				font-weight: 900;
@@ -42,7 +41,7 @@
 		.footer__copyright {
 			margin-left: auto;
 			.footer__copyrightText {
-				color: #ffffff;
+				color: #000000;
 			}
 		}
 	}

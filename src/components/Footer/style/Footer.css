@@ -14,8 +14,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(#df3549), to(rgba(233, 83, 69, 0.5)));
-  background: linear-gradient(to right, #df3549, rgba(233, 83, 69, 0.5));
+  background: -webkit-gradient(linear, left bottom, left top, from(#dddddd), to(rgba(238, 238, 238, 0.85)));
+  background: linear-gradient(to top, #dddddd, rgba(238, 238, 238, 0.85));
   padding: 1em 0px;
 }
 
@@ -68,12 +68,11 @@
 }
 
 .footer .footer__container .footer__logo .footer__logoText {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 22.84px;
-  line-height: 25.84px;
+  font-size: 23px;
+  line-height: 26px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#df3549), to(rgba(233, 83, 69, 0.75)));
+  background: linear-gradient(to bottom, #df3549, rgba(233, 83, 69, 0.75));
   color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4bb392), to(#409479));
-  background: linear-gradient(to bottom, #4bb392, #409479);
   background-clip: text;
   font-size: 36px;
   font-weight: 900;
@@ -84,7 +83,7 @@
 }
 
 .footer .footer__container .footer__copyright .footer__copyrightText {
-  color: #ffffff;
+  color: #000000;
 }
 
 @media (max-width: 768px) {

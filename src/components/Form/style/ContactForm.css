@@ -1,7 +1,9 @@
 .contact__form {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(223, 53, 73, 0.85)), to(rgba(233, 83, 69, 0.85)));
-  background: linear-gradient(to bottom, rgba(223, 53, 73, 0.85), rgba(233, 83, 69, 0.85));
-  padding: 1em;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdfdf));
+  background: linear-gradient(to bottom, white, #dfdfdf);
+  -webkit-box-shadow: 0px 1px 2px #000000;
+          box-shadow: 0px 1px 2px #000000;
+  padding: 1em 1em 0em;
   border-radius: 25px;
   width: 80vw;
   height: 100%;
@@ -31,7 +33,7 @@
 .contact__form .contactForm__inputSection .input-block label {
   font-size: 1.5rem;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.75);
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -58,20 +60,23 @@
 }
 
 .contact__form .contactForm__inputSection .contactForm__btn {
-  font-weight: 900;
   width: 100%;
+  font-weight: 900;
   padding: 0.5em 1em;
   border: 0px solid transparent;
   border-radius: 25px;
-  color: white;
-  background: #df3549;
+  outline: none;
+  outline-width: 0;
+  color: black;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#dfdfdf));
+  background: linear-gradient(to bottom, white, #dfdfdf);
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .contact__form .contactForm__inputSection .contactForm__btn:hover {
-  opacity: 0.95;
-  background: #e95345;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(rgba(223, 223, 223, 0.75)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.75), rgba(223, 223, 223, 0.75));
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
